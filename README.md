@@ -5,17 +5,6 @@ Docker上でelasticstack(elasticsearch,kibana,logstash)とmysql(phpmyadmin含む
 細かい部分は現在調整中
 
 
-.env_mysqlが消えてしまうのでここに記載
-
-  MYSQL_DATABASE=change_me
-
-  MYSQL_USER=change_me
-
-  MYSQL_PASSWORD=change_me
-
-  MYSQL_ROOT_PASSWORD=change_me
-
-
 接続先：
 
   kibana：5601
@@ -31,15 +20,9 @@ Docker上でelasticstack(elasticsearch,kibana,logstash)とmysql(phpmyadmin含む
 
 起動前に必要なコマンド：
 
-  chmod a+x ./init/*.sh
-
   docker volume create elasticstack
 
-  docker volume ls
-
   docker network create elasticstack
-
-  docker network ls
 
 起動：
 
